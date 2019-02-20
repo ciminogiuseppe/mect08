@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2019-01-28" view-index="0" gantt-divider-location="388" resource-divider-location="300" version="2.8.10" locale="it">
+    <description/>
+    <view zooming-state="default:6" id="gantt-chart">
+        <field id="tpd3" name="Nome" width="211" order="0"/>
+        <field id="tpd4" name="Data d'inizio" width="87" order="1"/>
+        <field id="tpd5" name="Data di fine" width="86" order="2"/>
+        <option id="color.recent"><![CDATA[#3333ff #ff9966 #ffcccc #ffff66 #ff6666 #009933 #66ff00 #3366ff #ff3300 #ff3333]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nome" width="210" order="0"/>
+        <field id="1" name="Ruolo predefinito" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="stampante 3d" color="#3366ff" meeting="false" start="2019-02-20" duration="90" complete="0" thirdDate="2019-02-20" thirdDate-constraint="0" expand="true"/>
+        <task id="2" name="specifica preliminare" color="#66ff00" meeting="false" start="2019-02-20" duration="15" complete="0" thirdDate="2019-02-20" thirdDate-constraint="0" expand="true"/>
+        <task id="4" name="specifica definitiva" color="#009933" meeting="false" start="2019-03-13" duration="5" complete="0" thirdDate="2019-02-20" thirdDate-constraint="0" expand="true"/>
+        <task id="7" name="progetto elettromecc" color="#ff6666" meeting="false" start="2019-03-20" duration="15" complete="0" thirdDate="2019-02-20" thirdDate-constraint="0" expand="true"/>
+        <task id="10" name="disegnazione meccanica" color="#ff3300" meeting="false" start="2019-04-05" duration="15" complete="0" thirdDate="2019-02-20" thirdDate-constraint="0" expand="true"/>
+        <task id="13" name="verifica progetto" color="#ffff66" meeting="false" start="2019-04-25" duration="7" complete="0" thirdDate="2019-04-23" thirdDate-constraint="0" expand="true"/>
+        <task id="16" name="costruzione" color="#ffcccc" meeting="false" start="2019-05-03" duration="25" complete="0" thirdDate="2019-04-30" thirdDate-constraint="0" expand="true"/>
+        <task id="19" name="assemblaggio e test" color="#ff9966" meeting="false" start="2019-06-06" duration="10" complete="0" thirdDate="2019-06-11" thirdDate-constraint="0" expand="true"/>
+        <task id="23" name="revisione finale" color="#3333ff" meeting="false" start="2019-06-19" duration="5" complete="0" thirdDate="2019-06-20" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="giuseppe cimino" function="Default:1" contacts="" phone=""/>
+        <resource id="1" name="marco davi" function="SoftwareDevelopment:10" contacts="" phone=""/>
+        <resource id="2" name="matteo spasaro" function="SoftwareDevelopment:10" contacts="" phone=""/>
+        <resource id="3" name="alessandro amico" function="SoftwareDevelopment:10" contacts="" phone=""/>
+        <resource id="4" name="edoardo barello" function="SoftwareDevelopment:10" contacts="" phone=""/>
+        <resource id="5" name="gabriele palazzo" function="SoftwareDevelopment:10" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="2" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="10" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="13" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="16" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="19" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="2" resource-id="1" function="SoftwareDevelopment:10" responsible="false" load="100.0"/>
+        <allocation task-id="4" resource-id="1" function="SoftwareDevelopment:10" responsible="false" load="100.0"/>
+        <allocation task-id="7" resource-id="1" function="SoftwareDevelopment:10" responsible="true" load="100.0"/>
+        <allocation task-id="13" resource-id="1" function="SoftwareDevelopment:10" responsible="false" load="100.0"/>
+        <allocation task-id="16" resource-id="1" function="SoftwareDevelopment:10" responsible="false" load="100.0"/>
+        <allocation task-id="19" resource-id="1" function="SoftwareDevelopment:10" responsible="false" load="100.0"/>
+        <allocation task-id="23" resource-id="1" function="SoftwareDevelopment:10" responsible="false" load="100.0"/>
+        <allocation task-id="2" resource-id="2" function="SoftwareDevelopment:10" responsible="false" load="100.0"/>
+        <allocation task-id="4" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="7" resource-id="2" function="SoftwareDevelopment:10" responsible="false" load="100.0"/>
+        <allocation task-id="13" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="16" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="19" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="23" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="4" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="13" resource-id="3" function="SoftwareDevelopment:10" responsible="false" load="100.0"/>
+        <allocation task-id="16" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="19" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="23" resource-id="3" function="SoftwareDevelopment:10" responsible="false" load="100.0"/>
+        <allocation task-id="2" resource-id="4" function="SoftwareDevelopment:10" responsible="false" load="100.0"/>
+        <allocation task-id="4" resource-id="4" function="SoftwareDevelopment:10" responsible="false" load="100.0"/>
+        <allocation task-id="10" resource-id="4" function="SoftwareDevelopment:10" responsible="false" load="100.0"/>
+        <allocation task-id="13" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="16" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="19" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="23" resource-id="4" function="SoftwareDevelopment:10" responsible="false" load="100.0"/>
+        <allocation task-id="2" resource-id="5" function="SoftwareDevelopment:10" responsible="false" load="100.0"/>
+        <allocation task-id="4" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="7" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="13" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="16" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="19" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="23" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>
